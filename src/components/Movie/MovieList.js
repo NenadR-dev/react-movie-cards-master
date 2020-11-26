@@ -6,7 +6,7 @@ import MovieCard from './MovieCard';
 const getMovies = (movies, deleteMovie, setRating) => (
   <div className="card-deck">
     {movies.map(movie => (
-      <MovieCard key={movie.id} movie={movie} deleteMovie={deleteMovie} setRating={setRating}/>
+      <MovieCard key={movie.id} movie={movie} rating={movie.rating} deleteMovie={deleteMovie} setRating={setRating}/>
     ))}
   </div>
 );
